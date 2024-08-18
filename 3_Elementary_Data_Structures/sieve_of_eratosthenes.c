@@ -1,5 +1,6 @@
-#define N 1000
 #include <stdio.h>
+#define N 1000
+
 int main() {
     int i, j, a[N+1];
     for (a[1] = 0, i = 2; i <= N; i++) a[i] = 1;
