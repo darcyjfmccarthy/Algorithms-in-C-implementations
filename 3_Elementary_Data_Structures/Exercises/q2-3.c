@@ -26,3 +26,18 @@ struct node *insertafter(int v, struct node *t) {
     return x;
 }
 
+void movenexttofront(struct node *t) {
+    struct node *v;
+    v = t->next;
+
+    t->next = v->next;
+    v->next = head->next;
+    head->next = v;
+
+}
+
+void exchange(struct node *t, struct node *u) {
+    struct node *temp = t->next;
+    t->next = u->next;
+    u->next = temp;
+}
